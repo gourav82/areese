@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+     <link rel="stylesheet" href="css/org.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark d-lg-block" id="login" style=" z-index: 2000;">
+        <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand nav-link" target="" href="index.html">
+                <img src="./img/logo__1_-removebg-preview.png" alt="areese logo" height="33">
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-dark" id="navbarExample01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item"><a class="nav-link " href="signup.html">
+                            <i class="fas fa-lock"></i> login / register</a></li>
+
+                    <!-- 	<li class="nav-item"><a class="nav-link" href="/registration.html">-->
+                    <!--<i class="fas fa-user-plus"></i> Registration</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="/scholarship.html"> <i
+                                class="fas fa-graduation-cap"></i> Scholarship Form</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="enquiry.html"><i class="fas fa-circle-question"></i>
+                            Enquiry</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-phone mr-3"></i> 76100
+                            76200 <strong style="color:#f58026 ;">|</strong> 0141 2791873 </a>
+                    </li>
+
+
+                </ul>
+
+                <ul class="navbar-nav d-flex flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="" rel="nofollow" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://www.facebook.com/AreeseCareerInstitute" rel="nofollow"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="" rel="nofollow" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://www.instagram.com/areesecareerinstitute/" rel="nofollow"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+     
+        <div class="container register d-flex align-items-center justify-content-center text-center h-100">
+                <div class="card shadow p-3 ">
+                <div class="row">
+                    <div class="col-md-3 register-left mt-2">
+                        <a href="index.html"><img src="./img/logo__1_-removebg-preview.png" alt="" width="200" height="50"/></a>
+                        <div id="left"> 
+                        <form acton="login-submit.php">
+                            <h4>Login here</h4> <hr>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form2Example1" class="form-control" placeholder="Email"/>
+                              <label class="form-label" for="form2Example1">Email</label>
+                            </div>
+                          
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                              <input type="password"  id="form2Example2" class="form-control" placeholder="Password" />
+                              <label class="form-label" for="form2Example2">Password</label>
+                            </div>
+                          
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class=" form-group d-flex justify-content-center">
+                            
+                                <!-- Checkbox -->
+                                <div class="col-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                </div>
+                                <label for="vehicle1">Remember Me</label>
+                              </div>
+                          
+                          
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                            <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Forgot password?</a>
+                              </div>
+                          
+                           
+                          </form>
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-9 register-right ">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Parents </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Student</a>
+                            </li>
+                        </ul>
+                        <!-- parent form -->
+                        <form action="parent-submit.php" id="parent-form">
+                        <div class="tab-content" id="myTabContent">
+                            <form  id="parent-form">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading text-white">Parents registration</h3>
+                                <div class="row register-form  needs-validation" novalidate>
+                                    <div class="col-md-6">
+                                          <div class="form-group">
+                                            <input type="text" name="first_name" class="form-control" id="validationDefault01" placeholder="First Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="last_name" class="form-control" placeholder="Last Name *" value="" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" class="form-control" placeholder="Password *" value=""required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password *" value="" required/>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder=" Email *"value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="phone" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder=" Phone *" value=""required />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option>10th moving</option>
+                                                <option>11th moving</option>
+                                                <option>11th moving</option>
+                                                <option>12th passed</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option>JEE MAIN</option>
+                                                <option>JEE (MAIN+ ADVANCE)</option>
+                                                <option>PRE-MEDICAL</option>
+                                            </select>
+                                        </div>
+                                   
+                                       
+                                        <div class="form-group">
+                                            <input type="text" name="enter_promocode" class="form-control" placeholder="Enter promocode*" value="" />
+                                           
+                                            </div>
+                                        </div>
+                                        <div class="form-group mx-4">
+                                            <div class="row">
+                                                <label class="checkbox"> 
+                                                    <input type="checkbox" name="authorize" value="true"required>
+                                                    <span> I agree to the <u>Terms & Condition</u></span> 
+                                                </label>
+                                            </div>
+                                                <div class="row">
+                                                <label class="checkbox"> 
+                                                    <input type="checkbox" name="authorize" value="true" checked>
+                                                    <span> 
+                                                        I authorize Areese Career Institute to send me regular updates via Phone Calls, WhatsApp, SMS, Robocalls (Automated Calls),
+                                                        Email, or on Postal addresses </span> 
+                                                </label>
+                                            </div>
+                                            </div>
+                                            <button type="submit" id="parent-submit" class="btn btn-primary  btn-block mb-4">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                     <!--student form-->
+                        <form action="student-submit.php" id="student-form">
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3 class="register-heading student text-white">Student registration</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" required/>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder=" Email *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder=" Phone *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option value="10">10th moving</option>
+                                                <option value="11">11th moving</option>
+                                                <option value="12">11th moving</option>
+                                               
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" required>
+                                                <option value="">Select</option>
+                                                <option>JEE MAIN</option>
+                                                <option>JEE (MAIN+ ADVANCE)</option>
+                                                <option>PRE-MEDICAL</option>
+                                            </select>
+                                        </div>
+                                   
+                                       
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter promocode*" value="" />
+                                           
+                                            </div>
+                                        </div>
+                                        <div class="form-group mx-4">
+                                            <div class="row">
+                                                <label class="checkbox"> 
+                                                    <input type="checkbox" name="gender" value="male" checked>
+                                                    <span> I agree to the <u>Terms & Condition</u></span> 
+                                                </label>
+                                            </div>
+                                                <div class="row">
+                                                <label class="checkbox"> 
+                                                    <input type="checkbox" name="gender" value="female">
+                                                    <span> 
+                                                        I authorize Areese Career Institute to send me regular updates via Phone Calls, WhatsApp, SMS, Robocalls (Automated Calls),
+                                                        Email, or on Postal addresses </span> 
+                                                </label>
+                                            </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary  btn-block mb-4">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        
+                        </div>
+                        
+                        </div>
+         
+        </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark" style="background-color: #ffffff">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 ">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            <img src="./img/logo.png" alt="" class="img-fluid">
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mt-2">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Support</h6>
+                        <p>
+                            <a class="text-dark">Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a class="text-dark">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a class="text-dark">Company Support</a>
+                        </p>
+                        <p>
+                            <a class="text-dark">FAQuestions</a>
+                        </p>
+                        <p>
+                            <a class="text-dark">Company Licence</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mt-2">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Get in Touch</h6>
+                        <p><i class="fas fa-home mr-3"></i> 80/4, 2nd floor, Rathore Tower,Opp. Sanganer Bus
+                            Depot,Pratap Nagar, Jaipur 302033</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@areese.org</p>
+                        <p><i class="fas fa-phone mr-3"></i> +91 76100 76200</p>
+                        <p><i class="fas fa-phone mr-3"></i> +91 0141 2791873</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mt-2 ">
+                        <div id="map-container-google-1 "
+                            class="z-depth-1-half map-container d-flex justify-content-center" style="height: 400px">
+                            <iframe src="https://maps.google.com/maps?q=AREESE&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" class="map" style="height:270px;" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <hr>
+        <!-- Footer -->
+        <div class="container">
+            <div class="footer-btm">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="text-center mb-2">
+                            <h5>Follow Us on social media</h5>
+
+                            <a href="" class="btn  m-1" role="button" rel="nofollow" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/AreeseCareerInstitute" class="btn  m-1" role="button"
+                                rel="nofollow" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="btn  m-1" role="button" rel="nofollow" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/areesecareerinstitute/" class="btn  m-1" role="button"
+                                rel="nofollow" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subscribe-form text-lg-right mb-5 mt-lg-0">
+                            <form action="#" class="subscribe">
+                                <input type="text" class="form-control" placeholder="Your Email address">
+                                <a href="#" class="btn btn-main-2 btn-round-full">Subscribe</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a class="backtop js-scroll-trigger" href="#top">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Footer-->
+    <footer class="bg-light text-lg-start">
+        <hr class="m-0" />
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="copyright">
+                &copy; Copyright Reserved to <span class="text-color">AREESE</span>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+             
+    <script>
+        $( document ).ready(function() {
+           $('#student-form').hide();
+          });
+          $('#profile-tab').click(function() {
+          $('#parent-form').hide();
+          $('#student-form').show();
+          });
+
+          $('#home-tab').click(function() {
+          $('#parent-form').show();
+          $('#student-form').hide();
+          }); 
+      </script>
+</body>
+
+</html>
